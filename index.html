@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Wedding invitation — Prudhvi & Harini. Join us for our wedding on 24 June 2026 and reception on 28 June 2026 at Jangareddigudem."
+    />
+    <meta property="og:title" content="Prudhvi & Harini — Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="You are cordially invited to celebrate our wedding and reception."
+    />
+    <meta property="og:type" content="website" />
+    <title>Prudhvi & Harini — Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>" />
+  </head>
+  <body>
+    <div class="intro" id="intro" role="dialog" aria-label="Open invitation">
+      <div class="intro__glow" aria-hidden="true"></div>
+      <div class="intro__particles" id="intro-particles" aria-hidden="true"></div>
+      <div class="intro__content">
+        <div class="intro__rings" aria-hidden="true">
+          <svg viewBox="0 0 120 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="24" r="18" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="84" cy="24" r="18" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </div>
+        <p class="intro__label">You're Invited</p>
+        <p class="intro__names">Prudhvi <span>&</span> Harini</p>
+        <p class="intro__hint">
+          <span class="intro__hint-pulse"></span>
+          Tap to open your invitation
+        </p>
+      </div>
+    </div>
+
+    <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+    <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+    <div class="petals" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <div class="invite-shell" id="invite-shell" hidden>
+      <div class="invite-frame">
+        <svg class="corner corner--tl" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M4 60 Q4 4 60 4" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <path d="M12 52 Q12 20 44 12" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.7" />
+          <circle cx="8" cy="8" r="2.5" fill="currentColor" />
+          <path d="M18 6 h4 M26 6 h4 M34 6 h4" stroke="currentColor" stroke-width="0.6" opacity="0.5" />
+        </svg>
+        <svg class="corner corner--tr" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M60 60 Q60 4 4 4" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <path d="M52 52 Q52 20 20 12" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.7" />
+          <circle cx="56" cy="8" r="2.5" fill="currentColor" />
+        </svg>
+        <svg class="corner corner--bl" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M4 4 Q4 60 60 60" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <path d="M12 12 Q12 44 44 52" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.7" />
+          <circle cx="8" cy="56" r="2.5" fill="currentColor" />
+        </svg>
+        <svg class="corner corner--br" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M60 4 Q60 60 4 60" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <path d="M52 12 Q52 44 20 52" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.7" />
+          <circle cx="56" cy="56" r="2.5" fill="currentColor" />
+        </svg>
+        <div class="invite-frame__edge invite-frame__edge--top" aria-hidden="true"></div>
+        <div class="invite-frame__edge invite-frame__edge--bottom" aria-hidden="true"></div>
+
+        <div class="invite-frame__inner">
+          <main class="invite">
+            <header class="hero reveal">
+              <p class="monogram" aria-hidden="true">P <span>♥</span> H</p>
+              <p class="eyebrow shimmer">Together with their families</p>
+              <h1 class="names">
+                <span class="name name--bride">Prudhvi</span>
+                <span class="ampersand" aria-hidden="true">&</span>
+                <span class="name name--groom">Harini</span>
+              </h1>
+              <p class="tagline">
+                request the honour of your presence<br />at the celebration of their marriage
+              </p>
+              <div class="divider" aria-hidden="true">
+                <span class="divider__line"></span>
+                <span class="divider__gem">✦</span>
+                <span class="divider__line"></span>
+              </div>
+            </header>
+
+            <section class="countdown reveal" id="countdown" aria-live="polite" aria-label="Time until wedding">
+              <p class="countdown__eyebrow">Until our wedding day</p>
+              <div class="countdown__grid">
+                <div class="countdown__box">
+                  <span class="countdown__num" id="timer-days">00</span>
+                  <span class="countdown__unit">Days</span>
+                </div>
+                <span class="countdown__sep" aria-hidden="true">:</span>
+                <div class="countdown__box">
+                  <span class="countdown__num" id="timer-hours">00</span>
+                  <span class="countdown__unit">Hours</span>
+                </div>
+                <span class="countdown__sep" aria-hidden="true">:</span>
+                <div class="countdown__box">
+                  <span class="countdown__num" id="timer-mins">00</span>
+                  <span class="countdown__unit">Minutes</span>
+                </div>
+              </div>
+              <p class="countdown__date" id="countdown-date-label">24 June 2026 · 8:57 PM</p>
+            </section>
+
+            <div class="events-head reveal">
+              <p class="events-head__label">Our Celebrations</p>
+              <h2 class="events-head__title">Two special days</h2>
+              <div class="events-head__rule" aria-hidden="true">
+                <span></span><span class="events-head__gem">✦</span><span></span>
+              </div>
+            </div>
+
+            <section class="card card--wedding reveal" id="wedding">
+              <div class="card__shine" aria-hidden="true"></div>
+              <div class="card__accent" aria-hidden="true"></div>
+              <header class="card__header">
+                <div class="card__icon-wrap" aria-hidden="true">💍</div>
+                <div class="card__header-text">
+                  <p class="card__label">Wedding Ceremony</p>
+                  <span class="card__badge card__badge--ceremony">Sacred Union</span>
+                </div>
+              </header>
+              <div class="card__date-block">
+                <div class="date-showcase">
+                  <time class="date-tile" datetime="2026-06-24">
+                    <span class="date-tile__holes" aria-hidden="true"></span>
+                    <span class="date-tile__month">June</span>
+                    <span class="date-tile__day">24</span>
+                    <span class="date-tile__year">2026</span>
+                  </time>
+                  <div class="date-showcase__bar">
+                    <p class="date-showcase__weekday" id="wedding-weekday">Wednesday</p>
+                    <p class="date-showcase__time" id="wedding-time">
+                      <span class="date-showcase__time-icon" aria-hidden="true">◷</span>
+                      <span class="date-showcase__time-text">08:57 PM</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="card__ornament" aria-hidden="true">
+                <span class="card__ornament-line"></span>
+                <span class="card__ornament-gems">✦ · ♥ · ✦</span>
+                <span class="card__ornament-line"></span>
+              </p>
+              <div class="card__body">
+              <div class="card__venue" data-event="wedding">
+                <p class="card__venue-title">Venue</p>
+                <p class="card__venue-name" id="wedding-venue-name">Yendagandi</p>
+                <p class="card__landmark" id="wedding-landmark">Near Bhimavaram</p>
+                <p class="card__address" id="wedding-address">
+                  Yendagandi, near Bhimavaram, West Godavari district, Andhra Pradesh, India
+                </p>
+                <p class="card__venue-note" id="wedding-venue-note">
+                  Join us for the sacred wedding ceremony with family and friends as we begin our journey together.
+                </p>
+                <div class="venue-actions">
+                  <a class="btn btn--map" id="wedding-navigate" href="#" target="_blank" rel="noopener noreferrer">
+                    Navigate
+                  </a>
+                  <a class="btn btn--ghost" id="wedding-calendar" href="#" target="_blank" rel="noopener noreferrer">
+                    Add to Calendar
+                  </a>
+                  <!-- <button type="button" class="btn btn--ghost btn--copy" id="wedding-copy">Copy Address</button> -->
+                </div>
+                <p class="card__venue-hint" id="wedding-map-hint" hidden>Map link will be shared soon.</p>
+              </div>
+              </div>
+            </section>
+
+            <section class="card card--reception reveal" id="reception">
+              <div class="card__shine" aria-hidden="true"></div>
+              <div class="card__accent" aria-hidden="true"></div>
+              <header class="card__header">
+                <div class="card__icon-wrap" aria-hidden="true">🍽️</div>
+                <div class="card__header-text">
+                  <p class="card__label">Reception</p>
+                  <span class="card__badge card__badge--feast">Lunch Feast</span>
+                </div>
+              </header>
+              <div class="card__date-block">
+                <div class="date-showcase">
+                  <time class="date-tile" datetime="2026-06-28">
+                    <span class="date-tile__holes" aria-hidden="true"></span>
+                    <span class="date-tile__month">June</span>
+                    <span class="date-tile__day">28</span>
+                    <span class="date-tile__year">2026</span>
+                  </time>
+                  <div class="date-showcase__bar">
+                    <p class="date-showcase__weekday" id="reception-weekday">Sunday</p>
+                    <p class="date-showcase__time" id="reception-time">
+                      <span class="date-showcase__time-icon" aria-hidden="true">◷</span>
+                      <span class="date-showcase__time-text">11:00 AM</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="card__ornament" aria-hidden="true">
+                <span class="card__ornament-line"></span>
+                <span class="card__ornament-gems">✦ · ♥ · ✦</span>
+                <span class="card__ornament-line"></span>
+              </p>
+              <div class="card__body">
+              <div class="card__venue" data-event="reception">
+                <p class="card__venue-title">Venue &amp; Lunch Feast</p>
+                <p class="card__venue-name" id="reception-venue-name">Jangareddigudem</p>
+                <p class="card__landmark" id="reception-landmark">Reception &amp; lunch feast venue</p>
+                <p class="card__address" id="reception-address">
+                  Jangareddigudem, Eluru district, Andhra Pradesh, India
+                </p>
+                <p class="card__venue-note" id="reception-venue-note">
+                  Join us for a warm celebration with family and friends — a festive lunch feast at the venue.
+                </p>
+                <div class="venue-actions">
+                  <a
+                    class="btn btn--map"
+                    id="reception-navigate"
+                    href="https://maps.app.goo.gl/mKyxziDSKdAi3LvSA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Navigate
+                  </a>
+                  <a class="btn btn--ghost" id="reception-calendar" href="#" target="_blank" rel="noopener noreferrer">
+                    Add to Calendar
+                  </a>
+                  <!-- <button type="button" class="btn btn--ghost btn--copy" id="reception-copy">Copy Address</button> -->
+                </div>
+                <p class="card__venue-hint" id="reception-map-hint" hidden>Map link will be shared soon.</p>
+              </div>
+              </div>
+            </section>
+
+            <section class="blessing reveal">
+              <p class="quote-mark" aria-hidden="true">“</p>
+              <p>
+                Dear friends and family,<br />
+                your love and blessings mean the world to us.<br />
+                We cannot wait to celebrate this joyous day with you.
+              </p>
+              <p class="blessing__sign">With love,<br /><strong>Prudhvi &amp; Harini</strong></p>
+            </section>
+
+            <footer class="footer reveal">
+              <p class="footer__rsvp">We look forward to welcoming you</p>
+              <p class="footer__hashtag">#PrudhviAndHarini</p>
+            </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
