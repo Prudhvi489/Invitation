@@ -164,7 +164,7 @@
   /* Countdown */
   const countdownTarget = config.countdownTarget
     ? new Date(config.countdownTarget)
-    : new Date("2026-06-24T20:57:00+05:30");
+    : new Date("2026-06-24T20:55:00+05:30");
 
   const daysEl = document.getElementById("timer-days");
   const hoursEl = document.getElementById("timer-hours");

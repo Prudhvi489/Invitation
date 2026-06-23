@@ -4,8 +4,8 @@
  * Reception: https://maps.app.goo.gl/mKyxziDSKdAi3LvSA
  */
 window.INVITE_CONFIG = {
-  countdownTarget: "2026-06-24T20:57:00+05:30",
-  countdownLabel: "24 June 2026 · 8:57 PM",
+  countdownTarget: "2026-06-24T20:55:00+05:30",
+  countdownLabel: "24 June 2026 · 8:55 PM",
 
   wedding: {
     venueName: "Yendagandi",
@@ -16,7 +16,7 @@ window.INVITE_CONFIG = {
     mapUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Yendagandi%2C%20near%20Bhimavaram%2C%20Andhra%20Pradesh",
     calendarTitle: "Prudhvi & Harini — Wedding",
-    start: "2026-06-24T20:57:00+05:30",
+    start: "2026-06-24T20:55:00+05:30",
     end: "2026-06-24T23:00:00+05:30",
   },
 
