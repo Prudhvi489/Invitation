@@ -14,7 +14,7 @@ window.INVITE_CONFIG = {
     venueNote:
       "Join us for the sacred wedding ceremony with family and friends as we begin our journey together.",
     mapUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Yendagandi%2C%20near%20Bhimavaram%2C%20Andhra%20Pradesh",
+      "https://www.google.com/maps/place/16%C2%B038'55.9%22N+81%C2%B032'05.1%22E/@16.648846,81.534737,17z/data=!3m1!4b1!4m4!3m3!8m2!3d16.648846!4d81.534737!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D",
     calendarTitle: "Prudhvi & Harini — Wedding",
     start: "2026-06-24T20:55:00+05:30",
     end: "2026-06-24T23:00:00+05:30",
